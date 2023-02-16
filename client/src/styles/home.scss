@@ -1,0 +1,129 @@
+.home__container{
+    //background-image: url(../images/chris.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    line-height: 1.8;
+    .wrapper{
+        width:calc(100% - 1rem);
+        max-width:1400px ;
+        margin-inline: auto;
+    }
+    .home__headline{
+        z-index:-4;
+        margin-block-start: 50px;
+        .home__title{
+            margin-block:20px;
+        }
+    }
+    .c-change{
+        display: flex;
+        //justify-content: space-evenly;
+    .c-image1{
+        background-image: url(../images/chris.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    }
+    .c-image2{
+        background-image: url(../images/nicholas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    }
+    @media(max-width:37.5em){
+       .c-image1,.c-image2{
+        height: 300px;
+       } 
+    }
+    }
+    .home__images{
+        display:flex;
+        justify-content:center;
+    }
+   
+    article{
+        letter-spacing: 2px;
+        padding:10px;
+        //background-color: gainsboro;
+    }
+    .save_the_planet{
+       // background-image:url(../images/chris.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        .save-planet{
+       // color:red !important;
+        text-align: center;
+        font-size:40px;
+       }
+
+    }
+    @media (min-width:56em){
+        .carousel2{
+            width:75%;
+            margin-inline:auto;
+        }
+    }
+    @media (min-width:37.5em){
+        img{
+            width:500px;
+            height:300px;
+        }
+        .climate__component{
+            margin-block:30px;
+        }
+        .articles__container{
+            display:grid;
+            grid-template-columns:1fr;
+            width:60%;
+            margin-inline: auto;
+        }
+        .article{
+            text-align: left;
+            margin-inline:auto ;
+        }
+    }
+    
+}
+.climate-change-img{
+    //.change-article{}
+    .change-img{
+        width:500px;
+        height:500px;
+        background-image:url(../images/matt-palm.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+    @media(max-width:37.5em){
+        .change-img{
+            margin-bottom: -50 !important;
+        }
+    }
+}
+@media(min-width:37.5em){
+    .change-article{
+        width:50%;
+    }
+    .climate-change-img{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+}
+
+.footer{
+    background-color:rgb(252, 248, 248);
+    text-align: center;
+    padding-block: 50px;
+    .contact__title{
+        padding-block-end: 10px;
+    }
+    a:not(:last-child){
+        margin-inline-end:10px;
+    }
+}

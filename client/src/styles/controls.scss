@@ -1,0 +1,96 @@
+$color1:rgb(121, 121, 129);
+.wrapper{
+    width: calc(100% - 1rem);
+    max-width: 1400px;
+    margin-inline: auto;
+}
+.news{
+    margin:0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    .headline{
+        color:$color1;
+        font-style: oblique;
+    }
+    .quote{
+        margin-inline-start: 40px;
+        padding-block:40px;
+    }
+    .preserve-article{
+        text-transform: uppercase;
+    }
+    .justice{
+        font-size: inherit;
+    } 
+    @media (max-width:37.5em){
+        .people{
+            margin-top: -220px;
+        }
+    }
+}
+@media (min-width:62.5em){
+    .conserve__articles{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:10px;
+    }
+    .preserve{
+        flex:1;
+    }
+}
+.electric-car{
+    transition: all ease-in-out 300ms;
+    height: 1000px;
+    h1{
+        text-transform: none;
+    }
+    p{
+        letter-spacing: 3px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        text-transform: none;
+
+    }
+}
+@media (max-width:62.498em){
+    .electric-car,.solar-energy,.wind-energy{
+        height: 800px !important;
+    }
+}
+@media (max-width:40.498em){
+    .electric-car,.solar-energy,.wind-energy{
+        height: 1000px !important;
+    }
+}
+.electric-car:hover{
+    transform: scale(1.01);
+}
+.solar-energy{
+    height: 1000px;
+    transition: all ease-in-out 300ms;
+        p{
+            letter-spacing: 3px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+            text-transform: none;
+    
+        }
+    
+}
+.solar-energy:hover{
+    transform: scale(1.01);
+}
+.wind-energy{
+    height: 1000px;
+    transition: all ease-in-out 300ms;
+    p{
+        letter-spacing: 3px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        text-transform: none;
+
+    }
+}
+.wind-energy:hover{
+    
+    transform: scale(1.01);
+}

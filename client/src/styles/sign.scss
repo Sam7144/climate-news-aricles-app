@@ -1,0 +1,11 @@
+.sign{
+    &_content{
+        letter-spacing: 2px;
+        line-height: 2.5;
+    }
+    @media (max-width:37.499em){
+        .form{
+            width:100% !important;
+        }
+    }
+}
