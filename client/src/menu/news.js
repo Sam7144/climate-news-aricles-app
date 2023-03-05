@@ -19,7 +19,7 @@ const Climatenews = () => {
       .then((response) => setData(response));
   }
   function fetchFakeOne(id) {
-    fetch(`http://localhost:5005/news/${id}`)
+    fetch(`https://climate-news-aricles-app-server.vercel.app/news/${id}`)
       .then((response) => {
         return response.json();
       })
