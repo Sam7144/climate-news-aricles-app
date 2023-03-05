@@ -4,6 +4,7 @@ import "../styles/news.scss";
 import twitterIcon from "../images/icon-twitter.svg";
 import facebookIcon from "../images/icon-facebook.svg";
 import linkedinIcon from "../images/icon-linkedin.svg";
+import { Link } from "react-router-dom";
 const Climatenews = () => {
   const [data, setData] = useState([]);
   const newspaper = useRef();
@@ -55,12 +56,12 @@ const Climatenews = () => {
             {data.map((val, index) => {
               return (
                 <div key={index} className="card news-card">
-                  <a href={val.url}>
+                  <Link href={val.url}>
                   <div className="card-body">
                     <h5>{val.title}</h5>
                     <p>{val.source}</p>
                   </div>
-                  </a>
+                  </Link>
                 </div>
               );
             })}
