@@ -55,14 +55,14 @@ const Climatenews = () => {
           <div className="container-news w-75 mx-auto">
             {data.map((val, index) => {
               return (
+                <a href={val.url} target='_blank'>
                 <div key={index} className="card news-card">
-                  <Link href={val.url}>
                   <div className="card-body">
                     <h5>{val.title}</h5>
                     <p>{val.source}</p>
                   </div>
-                  </Link>
                 </div>
+                </a>
               );
             })}
           </div>

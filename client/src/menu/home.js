@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <div className="home__container wrapper">
         <div className="home__headline">
-          <a href="/newsletter" className=" me-3 text-blue">
+          <a href="/news" className=" me-3 text-blue">
             news
           </a>
           <a href="/control-articles" className="text-blue">
